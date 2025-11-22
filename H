@@ -1,0 +1,39 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 5
+Code from codeforce contest #1
+⁠* Problem ID: #H
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :22/11/2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/219432/H 
+* */
+
+1.	#include <iostream>
+2.	#include <cmath>
+3.	using namespace std;
+4.	 
+5.	int main() {
+6.	    long long X;
+7.	    cin >> X;
+8.	 
+9.	    bool isPrime = true;
+10.	 
+11.	    if (X == 1) {
+12.	        isPrime = false;
+13.	    } else {
+14.	        for (long long i = 2; i * i <= X; i++) {
+15.	            if (X % i == 0) {
+16.	                isPrime = false;
+17.	                break;
+18.	            }
+19.	        }
+20.	    }
+21.	 
+22.	    if (isPrime)
+23.	        cout << "YES";
+24.	    else
+25.	        cout << "NO";
+26.	 
+27.	    return 0;
+28.	}
