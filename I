@@ -1,0 +1,41 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 5
+Code from codeforce contest #1
+⁠* Problem ID: #I
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :22/11/2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/219432 /I 
+* */
+
+1.	#include <iostream>
+2.	#include <string>
+3.	#include <algorithm>
+4.	using namespace std;
+5.	 
+6.	int main() {
+7.	    string N;
+8.	    cin >> N;
+9.	 
+10.	    string reversedN = N;           // Make a copy of N
+11.	    reverse(reversedN.begin(), reversedN.end()); // Reverse the string
+12.	 
+13.	    // Remove leading zeros
+14.	    size_t firstNonZero = reversedN.find_first_not_of('0');
+15.	    if (firstNonZero != string::npos) {
+16.	        reversedN = reversedN.substr(firstNonZero);
+17.	    } else {
+18.	        reversedN = "0"; // In case the number is all zeros
+19.	    }
+20.	 
+21.	    cout << reversedN << endl;
+22.	 
+23.	    if (N == string(N.rbegin(), N.rend())) {
+24.	        cout << "YES" << endl;
+25.	    } else {
+26.	        cout << "NO" << endl;
+27.	    }
+28.	 
+29.	    return 0;
+30.	}
