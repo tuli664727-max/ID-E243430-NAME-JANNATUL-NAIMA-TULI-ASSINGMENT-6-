@@ -1,5 +1,5 @@
 # ID-E243430-NAME-JANNATUL-NAIMA-TULI-ASSINGMENT-6-
-# C++ Problem Set — Codeforces Sheet #2 (D → I, P, T, W)
+# C++ Problem Set — Codeforces Sheet #2 (D → I),( P, T, W)
 
 *Name:* Jannatul Naima Tuli <br>
 *ID:* E243430 <br>
